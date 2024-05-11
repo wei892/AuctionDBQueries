@@ -1,0 +1,35 @@
+INSERT INTO Auction (auctionId, start_time, end_time, status) VALUES
+(1, '2024-05-01 11:00:00', '2024-05-02 11:00:00', 'Closed'),
+(2, '2024-05-04 19:00:00', '2024-05-06 19:00:00', 'Closed'),
+(3, '2024-05-05 02:00:00', '2024-05-06 04:00:00', 'Canceled'),
+(4, '2024-05-08 22:00:00', '2024-05-09 22:00:00', 'Closed'),
+(5, '2024-05-09 04:00:00', '2024-05-10 21:00:00', 'Closed'),
+(6, '2024-05-09 10:00:00', '2024-05-14 10:00:00', 'Active'),
+(7, '2024-05-10 05:00:00', '2024-05-12 10:00:00', 'Active'),
+(8, '2024-05-20 12:00:00', '2024-05-21 11:00:00', 'Upcoming'),
+(9, '2024-05-27 12:00:00', '2024-05-27 23:00:00', 'Upcoming'),
+(10, '2024-06-01 07:00:00', '2024-06-02 10:00:00', 'Upcoming'),
+(11, '2024-01-01 10:00:00', '2024-01-02 10:00:00', 'Closed'),
+(12, '2024-01-15 10:00:00', '2024-01-16 10:00:00', 'Closed'),
+(13, '2024-02-01 10:00:00', '2024-02-02 10:00:00', 'Closed'),
+(14, '2024-02-15 10:00:00', '2024-02-16 10:00:00', 'Closed'),
+(15, '2024-03-01 10:00:00', '2024-03-02 10:00:00', 'Closed'),
+(16, '2024-03-15 10:00:00', '2024-03-16 10:00:00', 'Closed'),
+(17, '2024-04-01 10:00:00', '2024-04-02 10:00:00', 'Closed'),
+(18, '2024-04-15 10:00:00', '2024-04-16 10:00:00', 'Closed'),
+(19, '2024-05-01 10:00:00', '2024-05-02 10:00:00', 'Closed'),
+(20, '2024-05-15 10:00:00', '2024-05-16 10:00:00', 'Closed'),
+(21, '2024-01-05 10:00:00', '2024-01-06 10:00:00', 'Closed'),
+(22, '2024-01-20 10:00:00', '2024-01-21 10:00:00', 'Closed'),
+(23, '2024-02-05 10:00:00', '2024-02-06 10:00:00', 'Closed'),
+(24, '2024-02-20 10:00:00', '2024-02-21 10:00:00', 'Closed'),
+(25, '2024-03-05 10:00:00', '2024-03-06 10:00:00', 'Closed'),
+(26, '2024-03-20 10:00:00', '2024-03-21 10:00:00', 'Closed'),
+(27, '2024-04-05 10:00:00', '2024-04-06 10:00:00', 'Closed'),
+(28, '2024-04-20 10:00:00', '2024-04-21 10:00:00', 'Closed');
+
+
+Duration of auction can be set to be one day or multiple days. 
+The auction can also be a specficic duration ragning from a couple hours or a couple days. Time for the durations will be specified in 24 hour formats to the nearest hour. We can assume that this online auction platform is only used in a specific region, and thus there is no indication for timezone. The status type will be a set of enum values: 'Active', 'Closed', 'Upcoming', and 'Canceled' which will help consider all the possible types of auctions that can occur.
+
+Additional inserts were added to ensure other transactions within the database are referencing exisiting data and there are no invalid results.

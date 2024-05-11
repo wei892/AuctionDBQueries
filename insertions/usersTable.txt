@@ -1,0 +1,11 @@
+INSERT INTO Users (userId, userName, firstName, lastName, email, phone) VALUES
+(1, 'johnsmith', 'John', 'Smith', 'john.smith@google.com', '212-555-1234'),
+(2, 'janesnow', 'Jane', 'Snow', 'jane.snow@yahoo.com', '212-555-5678'),
+(3, 'mikeross', 'Mike', 'Ross', 'mike.ross@outlook.com', '212-555-9012'),
+(4, 'sarahconnor', 'Sarah', 'Connor', 'sarah.connor@google.com', '212-555-3456'),
+(5, 'tonystark', 'Tony', 'Stark', 'tony.stark@yahoo.com', '212-555-7890'),
+(6, 'lisasimpson', 'Lisa', 'Simpson', 'lisa.simpson@outlook.com', '212-555-2345'),
+(7, 'brucewayne', 'Bruce', 'Wayne', 'bruce.wayne@google.com', '212-555-6789'),
+(8, 'clarkkent', 'Clark', 'Kent', 'clark.kent@yahoo.com', '212-555-3457'),
+(9, 'dianaprince', 'Diana', 'Prince', 'diana.prince@outlook.com', '212-555-4567'),
+(10, 'peterparker', 'Peter', 'Parker', 'peter.parker@google.com', '212-555-7891');

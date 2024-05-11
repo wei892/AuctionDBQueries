@@ -1,0 +1,11 @@
+INSERT INTO Product (productId, productName, category, description) VALUES
+(1, 'MacBook Pro 16"', 'Electronics', 'Latest model with M1 chip'),
+(2, 'Samsung Galaxy S20', 'Electronics', 'Android smartphone with high performance'),
+(3, 'Canon EOS R5', 'Electronics', 'Professional mirrorless camera'),
+(4, 'Nike Air Force 1', 'Apparel', 'Classic white sneakers'),
+(5, 'The Great Gatsby', 'Books', 'Classic novel by F. Scott Fitzgerald'),
+(6, 'PlayStation 5', 'Electronics', 'Latest generation game console'),
+(7, 'Gucci Wallet', 'Apparel', 'Luxury leather wallet'),
+(8, 'Yamaha P-125 Digital Piano', 'Musical Instruments', 'Compact digital piano with authentic piano performance'),
+(9, 'Apple Watch Series 7', 'Electronics', 'Latest model smartwatch'),
+(10, 'Dyson V11 Torque Drive', 'Home Appliances', 'High-power, cord-free vacuum cleaner');

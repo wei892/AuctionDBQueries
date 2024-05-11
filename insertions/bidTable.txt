@@ -1,0 +1,24 @@
+INSERT INTO Bid (bidId, listingId, auctionId, bidValue, bidTime, bidStatus, userId) VALUES
+(1, 1, 1, 2450.00, '2024-05-01 11:05:33', 'Outbid', 2),
+(2, 1, 1, 2500.00, '2024-05-01 12:17:52', 'Accepted', 3), -- Highest bid when auction 1 closed
+(3, 2, 2, 850.00, '2024-05-04 22:34:19', 'Outbid', 4),
+(4, 2, 2, 860.00, '2024-05-04 23:48:11', 'Outbid', 5),
+(5, 2, 2, 950.00, '2024-05-06 16:33:23', 'Accepted', 6), -- Highest bid when auction 2 closed
+(6, 3, 6, 3700.00, '2024-05-09 16:34:05', 'Outbid', 7),
+(7, 3, 6, 3800.00, '2024-05-09 17:35:23', 'Outbid', 8),
+(8, 3, 6, 3850.00, '2024-05-10 17:12:15', 'Outbid', 9),
+(9, 3, 6, 3900.00, '2024-05-11 18:21:28', 'Leading', 10), -- Currently the highest bid and auction 6 is active
+(10, 5, 6, 40.00, '2024-05-10 18:45:39', 'Leading', 1),-- Currently the highest bid and auction 6 is active
+(11, 21, 21, 860.00, '2024-01-05 15:00:00', 'Accepted', 4),
+(12, 22, 22, 3700.00, '2024-01-20 15:00:00', 'Accepted', 6),
+(13, 23, 23, 120.00, '2024-02-05 15:00:00', 'Accepted', 8),
+(14, 24, 24, 40.00, '2024-02-20 15:00:00', 'Accepted', 10),
+(15, 25, 25, 600.00, '2024-03-05 15:00:00', 'Accepted', 9),
+(16, 26, 26, 350.00, '2024-03-20 15:00:00', 'Accepted', 7),
+(17, 27, 27, 650.00, '2024-04-05 15:00:00', 'Accepted', 8),
+(18, 28, 28, 450.00, '2024-04-20 15:00:00', 'Accepted', 6);
+
+Multiple variations of data were added to demonstrate how certain bids will be outbid by other bids. Additionally, it follows the business rule that if an auction has not ended, then the bid is marked as leading to demonstrate that it is the current highest bid. Once a bid has been completed, then the current leading bid will be marked as accepted and will move forward to processing. 
+
+Additional data has been added to ensure that there are enough accepted bids to create enough tuples in the payment table that match up to the data present.
+

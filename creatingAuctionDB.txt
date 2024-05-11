@@ -27,7 +27,7 @@ CREATE TABLE Auction (
     auctionId INT PRIMARY KEY,
     start_time DATETIME,
     end_time DATETIME,
-    status VARCHAR(50)
+    status ENUM('Active', 'Closed', 'Upcoming', 'Canceled')
 );
 
 -- Listing Item Table
@@ -49,7 +49,7 @@ CREATE TABLE Bid (
     auctionId INT,
     bidValue DECIMAL(10, 2),
     bidTime DATETIME,
-    bidStatus VARCHAR(50),
+    bidStatus ENUM('Accepted', 'Outbid', 'Withdrawn', 'Leading'),
     userId INT,
     FOREIGN KEY (itemId) REFERENCES ListingItem(listing_id),
     FOREIGN KEY (auctionId) REFERENCES Auction(auctionId),
